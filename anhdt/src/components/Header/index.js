@@ -5,7 +5,7 @@ import Logo from '../Logo'
 import SearchField from './SearchField'
 import Menu from './Menu'
 import Profile from './Profile'
-import Wrapper from './Wrapper'
+import { Wrapper } from './Header.style.js'
 
 const { Header } = Layout
 

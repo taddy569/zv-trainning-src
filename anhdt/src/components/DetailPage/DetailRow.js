@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col } from 'antd'
 
-import Wrapper from './Wrapper'
+import { Wrapper } from './DetailPage.style'
 
 const DetailRow = ({ leftComponent = 1, rightComponent = 2 }) => {
 	return (

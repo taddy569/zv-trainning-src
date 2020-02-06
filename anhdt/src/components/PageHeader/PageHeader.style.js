@@ -7,4 +7,6 @@ const WrapperPageHeader = styled(PageHeader)`
 	margin-bottom: 15px;
 `
 
-export default WrapperPageHeader
+export {
+ WrapperPageHeader,
+}

@@ -1,10 +1,14 @@
 import React from 'react'
 import { Layout, Icon } from 'antd'
 
-import ChildWrapper from './ChildWrapper'
-import CustomCategory from './CustomCategory'
 import CustomIcon from './CustomIcon'
-import Wrapper from './Wrapper'
+
+import {
+  ChildWrapper,
+  CustomCategory,
+  Wrapper,
+} from './Footer.style'
+
 import Logo from '../Logo'
 
 const { Footer } = Layout

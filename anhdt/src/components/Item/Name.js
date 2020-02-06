@@ -1,6 +1,6 @@
 import React from 'react'
 
-import WrapperName from './WrapperName'
+import { WrapperName } from './Item.style'
 
 const Name = ({ name }) => {
 	return (

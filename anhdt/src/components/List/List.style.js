@@ -4,4 +4,4 @@ const Ul = styled.ul`
 	list-style-type: none;
 `
 
-export default Ul
+export { Ul }

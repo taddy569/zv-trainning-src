@@ -1,7 +1,7 @@
 import React from 'react'
 
-import CustomButton from './CustomButton'
-import WrapperPrice from '../../../components/Item/WrapperPrice'
+import { CustomButton } from './DetailPage.style'
+import { WrapperPrice } from '../Item/Item.style'
 
 const RightMain = (props) => {
 	return (

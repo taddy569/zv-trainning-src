@@ -1,6 +1,6 @@
 import React from 'react'
 
-import WrapperPageHeader from './WrapperPageHeader'
+import { WrapperPageHeader } from './PageHeader.style'
 
 const CustomPageHeader = ({
   title,

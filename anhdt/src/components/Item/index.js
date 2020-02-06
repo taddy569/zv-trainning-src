@@ -3,9 +3,12 @@ import { Card } from 'antd'
 
 import StadiumImage from '../../assets/images/wembley.jpg'
 import Name from './Name'
-import WrapperName from './WrapperName'
 import Information from './Information'
-import WrapperLink from './WrapperLink'
+
+import {
+	WrapperName, 
+	WrapperLink,
+} from './Item.style'
 
 const { Meta } = Card
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import StadiumList from '../StadiumList'
-import PageHeader from '../../components/PageHeader'
+import StadiumList from '../../containers/StadiumList'
+import PageHeader from '../PageHeader'
 
 const HomePage = () => {
 	return (

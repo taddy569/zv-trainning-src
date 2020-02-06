@@ -7,4 +7,6 @@ const Logo = styled.div`
 	font-size: 22px;
 `
 
-export default Logo
+export {
+	Logo,
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import { List, Card } from 'antd'
 
 import Item from '../Item'
-import Ul from './Ul'
+import Ul from './List.style'
 
 const CustomList = (props) => (
 	<List

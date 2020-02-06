@@ -1,7 +1,7 @@
 import React from 'react'
 
-import WrapperInformation from './WrapperInformation'
-import WrapperPrice from './WrapperPrice'
+import { WrapperInformation } from './Item.style'
+import { WrapperPrice } from './Item.style'
 
 const Information = ({ address, price }) => {
 	return (

@@ -2,7 +2,7 @@ import React from 'react'
 import { Icon } from 'antd'
 import { Link } from 'react-router-dom'
 
-import Logo from './Wrapper'
+import { Logo } from './Logo.style'
 
 const CustomLogo = () => (
 	<Link to="/" style={{ 'textDecoration': 'none'}}>

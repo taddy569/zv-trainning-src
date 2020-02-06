@@ -1,7 +1,7 @@
 import React from 'react'
 import { Menu } from 'antd'
 
-import CustomA from './CustomA'
+import { CustomA } from './Header.style'
 
 const Item = Menu.Item
 

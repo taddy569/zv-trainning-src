@@ -4,4 +4,11 @@ const CustomA = styled.a`
 	margin-right: 15px;
 `
 
-export default CustomA
+const Wrapper = styled.div`
+	width: 100%;
+`
+
+export {
+	CustomA,
+	Wrapper,
+}
