@@ -24,7 +24,7 @@ const Item = (props) => {
 	/>
 
 	return (
-		<WrapperLink to={`/detail/:${props.id}`}>
+		<WrapperLink to={`/detail/${props.id}`}>
 			<Card
 				cover={
 		  		<img

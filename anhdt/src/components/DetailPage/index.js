@@ -18,7 +18,7 @@ import ImgSrc from '../../assets/images/wembley.jpg'
 
 const DetailPage = (props) => {
 
-	const params = props.match.params.id.substring(1)
+	const params = props.match.params.id
 	const itemData = props.stadiums.filter(item => item.id == params)
 
 	const CustomLeftMain = <LeftMain img={ImgSrc} />
