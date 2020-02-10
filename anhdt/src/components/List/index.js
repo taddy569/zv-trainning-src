@@ -1,22 +1,11 @@
 import React from 'react'
-import { List, Card } from 'antd'
 
-import Item from '../Item'
-import Ul from './List.style'
+import CustomList from './List'
 
-const CustomList = (props) => (
-	<List
-    grid={{ gutter: 10, column: 3 }}
-    dataSource={props.data}
-    renderItem={item => (
-      <Item
-      	id={item.id}
-        name={item.name}
-        address={item.address}
-        price={item.price}
-      />
-    )}
-  />
-)
+const ListComponent = (props) => {
+	return (
+    <CustomList { ...props } />
+  )
+}
 
-export default CustomList
+export default ListComponent

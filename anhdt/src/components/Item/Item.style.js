@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const WrapperInformation = styled.div`
-	display:flex;
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 `

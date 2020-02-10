@@ -16,3 +16,5 @@ export const doSearchNameData = (searchValue) => ({
 	type: 'SEARCH_NAME',
 	value: searchValue,
 })
+
+

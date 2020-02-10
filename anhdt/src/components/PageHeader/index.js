@@ -1,24 +1,11 @@
 import React from 'react'
 
-import { WrapperPageHeader, WrapperHeaderBar } from './PageHeader.style'
-import CustomFunctionBar from './CustomFunctionBar'
+import PageHeader from './PageHeader'
 
-const CustomPageHeader = ({
-  title,
-})  => {
-
+const PageHeaderComponent = ({ title })  => {
 	return (
-		<WrapperHeaderBar>
-
-			<WrapperPageHeader
-				title={title}
-			/>
-
-			{ title === "Grounds" && <CustomFunctionBar /> }
-			
-		</WrapperHeaderBar>
-		
+		<PageHeader title={title} />
 	)
 }
 
-export default CustomPageHeader
+export default PageHeaderComponent

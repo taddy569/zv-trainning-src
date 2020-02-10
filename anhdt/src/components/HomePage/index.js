@@ -1,16 +1,11 @@
 import React from 'react'
 
-import StadiumList from '../../containers/StadiumList'
-import PageHeader from '../PageHeader'
+import HomePage from './HomePage'
 
-const HomePage = () => {
+const HomePageComponent = () => {
 	return (
-		<div>
-			<PageHeader title='Grounds'/>
-			<StadiumList />
-		</div>
-
+		<HomePage />
 	)
 }
 
-export default HomePage
+export default HomePageComponent

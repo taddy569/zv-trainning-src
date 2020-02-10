@@ -1,5 +1,4 @@
-import React from 'react'
- 
+import React from 'react' 
 import { Select } from 'antd'
 
 const { Option } = Select
@@ -33,17 +32,12 @@ const CustomSort = ({ handleSort }) => {
 	return (
 		<Select
     	showSearch
-    	style={{ width: 200 }}
     	placeholder="Sort by..."
     	optionFilterProp="children"
-    	onChange={(value) => {
-    		handleSort(value)
-    	}}
+    	onChange={onChange}
     	onFocus={onFocus}
     	onBlur={onBlur}
-    	onSearch={(value) => {
-    		handleSort(value)
-    	}}
+    	onSearch={onSearch}
     	filterOption={(input, option) => (
 	      option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
     	)}

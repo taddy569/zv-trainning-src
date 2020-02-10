@@ -1,18 +1,14 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
-import List from '../List'
+import StadiumList from './StadiumList'
 
-const StadiumList = ({ stadiums, getData}) => {
-
-	useEffect(() => {
-		getData()
-	}, [stadiums])
-
-	if(stadiums !== false) {
-		return <List data={stadiums}/>
-	} else {
-		return <p>No data available</p>
-	}
+const StadiumListComponent = ({ stadiums, getData }) => {
+	return (
+		<StadiumList
+		  stadiums={stadiums}
+		  getData={getData}
+		/>
+	)
 }
 
-export default StadiumList
+export default StadiumListComponent

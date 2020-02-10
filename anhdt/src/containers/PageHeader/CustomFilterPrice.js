@@ -1,12 +1,15 @@
 import { connect } from 'react-redux'
 
 import CustomFilterPrice from '../../components/PageHeader/CustomFilterPrice'
+import { getStadiumsByFilterPriceData } from '../../reducers/homePageReducer'
 
-import { doFilterPriceData } from '../../actions/homePage'
+// const mapDispatchToProps = (dispatch) => ({
+// 	handleFilter: (filterValue) => { dispatch(getStadiumsByFilterPriceData(filterValue)) },
+// })
 
-const mapDispatchToProps = (dispatch) => ({
-	handleFilter: (filterValue) => { dispatch(doFilterPriceData(filterValue)) },
-})
+const mapDispatchToProps = {
+	handleFilter: (filterValue) => getStadiumsByFilterPriceData(filterValue),
+}
 
 export default connect(
 	null,

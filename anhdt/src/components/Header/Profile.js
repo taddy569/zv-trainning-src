@@ -1,17 +1,13 @@
 import React from 'react'
-import styled from 'styled-components'
-import { Avatar } from 'antd'
 
-// const ProfileWrapper = styled.div`
-// 	background-color: red;
-// `
+import { CustomAvatar } from './Header.style'
 
-const Profile = () => (
-	<div>
-    <Avatar size={64} icon="user" style={{
-    	'backgroundColor': 'white'
-    }}/>
-  </div>
-)
+const Profile = () => {
+	return (
+		<div>
+    	<CustomAvatar size={64} icon="user" />
+  	</div>
+	)
+}
 
 export default Profile

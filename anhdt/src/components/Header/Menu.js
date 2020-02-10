@@ -1,31 +1,23 @@
 import React from 'react'
 import { Menu } from 'antd'
 
-import { CustomA } from './Header.style'
+import * as HeaderStyle from './Header.style'
 
-const Item = Menu.Item
+const { Item } = Menu
 
 const CustomMenu = () => (
-	<Menu
-	  style={{
-	   	'display': 'flex',
-	   	'flexDirection': 'row',
-	   	'color': 'white',
-	  }}
-	>
-		<div style={{
-			'listStyleType':'none',
-			'display': 'flex',
-			'flexDirection': 'row',
-		}}>
-			<Item key="1"><CustomA>FIND MATCH</CustomA></Item>
-		  <Item key="2"><CustomA>GROUNDS</CustomA></Item>
-		  <Item key="3"><CustomA>MESSAGES</CustomA></Item>
-		  <Item key="4"><CustomA>UPCOMING</CustomA></Item>
-		</div>
-	  
+	<HeaderStyle.CustomMenu>
 
-	</Menu>	
+		<HeaderStyle.CustomMenuChild>
+
+			<Item key="1"><HeaderStyle.CustomA>FIND MATCH</HeaderStyle.CustomA></Item>
+		  <Item key="2"><HeaderStyle.CustomA>GROUNDS</HeaderStyle.CustomA></Item>
+		  <Item key="3"><HeaderStyle.CustomA>MESSAGES</HeaderStyle.CustomA></Item>
+		  <Item key="4"><HeaderStyle.CustomA>UPCOMING</HeaderStyle.CustomA></Item>
+		
+		</HeaderStyle.CustomMenuChild>
+
+	</HeaderStyle.CustomMenu>	
 )
 
 export default CustomMenu

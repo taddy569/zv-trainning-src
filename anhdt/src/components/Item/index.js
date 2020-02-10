@@ -1,44 +1,11 @@
 import React from 'react'
-import { Card } from 'antd'
 
-import StadiumImage from '../../assets/images/wembley.jpg'
-import Name from './Name'
-import Information from './Information'
+import Item from './Item'
 
-import {
-	WrapperName, 
-	WrapperLink,
-} from './Item.style'
-
-const { Meta } = Card
-
-const Item = (props) => {
-	
-	const StadiumNameComponent = <Name
-		name={props.name}
-	/>
-
-	const InformationComponent = <Information 
-		address={props.address}
-		price={props.price}
-	/>
-
+const ItemComponent = (props) => {
 	return (
-		<WrapperLink to={`/detail/${props.id}`}>
-			<Card
-				cover={
-		  		<img
-		  		  src={StadiumImage}
-		  		  width="350"
-		  		  height="200" />
-				}
-			>
-				<Meta
-				  title={StadiumNameComponent}
-				  description={InformationComponent} />
-			</Card>
-		</WrapperLink>		
+		<Item { ... props } />
 	)
 }
 
-export default Item
+export default ItemComponent

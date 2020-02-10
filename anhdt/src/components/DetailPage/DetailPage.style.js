@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Row, Button } from 'antd'
+import { Row, Button, Icon } from 'antd'
 
 const Wrapper = styled(Row)`
 	display: flex;
@@ -19,8 +19,13 @@ const WrapperDetailHeader = styled.div`
 	align-items: center;	
 `
 
+const WrapperIcon = styled(Icon)`
+	font-size: 25px,
+`
+
 export {
-	Wrapper	,
+	Wrapper,
+	WrapperIcon,
 	CustomButton,
 	WrapperDetailHeader,
 } 

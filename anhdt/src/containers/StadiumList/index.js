@@ -1,15 +1,19 @@
 import { connect } from 'react-redux'
 
 import StadiumList from '../../components/StadiumList'
-import { doGetData } from '../../actions/homePage'
+import { getDataStadium } from '../../reducers/homePageReducer'
 
 const mapStateToProps = (state) => ({
 	stadiums: state.stadiums,
 })
 
-const mapDispatchToProps = (dispatch) => ({
-	getData: () => { dispatch(doGetData()) }
-})
+// const mapDispatchToProps = (dispatch) => ({
+// 	getData: () => { dispatch(doGetData()) }
+// })
+
+const mapDispatchToProps = {
+	getData: () => getDataStadium()
+}
 
 export default connect(
 	mapStateToProps,
