@@ -29,17 +29,21 @@ const selectBarOptions = {
 }
 
 
-const CustomSort = () => {
+const CustomSort = ({ handleSort }) => {
 	return (
 		<Select
     	showSearch
     	style={{ width: 200 }}
-    	placeholder="Select a person"
+    	placeholder="Sort by..."
     	optionFilterProp="children"
-    	onChange={onChange}
+    	onChange={(value) => {
+    		handleSort(value)
+    	}}
     	onFocus={onFocus}
     	onBlur={onBlur}
-    	onSearch={onSearch}
+    	onSearch={(value) => {
+    		handleSort(value)
+    	}}
     	filterOption={(input, option) => (
 	      option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
     	)}

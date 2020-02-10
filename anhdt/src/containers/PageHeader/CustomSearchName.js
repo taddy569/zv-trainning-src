@@ -1,10 +1,16 @@
 import { connect } from 'react-redux'
 
 import CustomSearchName from '../../components/PageHeader/CustomSearchName'
-import { doSearchNameData } from '../../actions/homePage'
+import { 
+	doFilterPriceData,
+	doSortData,
+	doSearchNameData,
+} from '../../actions/homePage'
 
 const mapDispatchToProps = (dispatch) => ({
-	handleSearch: (searchValue) => { dispatch(doSearchNameData(searchValue)) }
+	handleFilter: (filterValue) => { dispatch(doFilterPriceData(filterValue)) },
+	handleSort: (sortValue) => { dispatch(doSortData(sortValue)) },
+	handleSearch: (searchValue) => { dispatch(doSearchNameData(searchValue)) },
 })
 
 export default connect(

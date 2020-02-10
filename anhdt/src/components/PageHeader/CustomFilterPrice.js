@@ -4,13 +4,13 @@ import { Input } from 'antd'
 
 const { Search } = Input
 
-const CustomFilterPrice = () => {
+const CustomFilterPrice = ({ handleFilter }) => {
 	return (
-		 <Search
+		<Search
       placeholder="Filter price..."
       enterButton="Search"
       size="large"
-      onSearch={value => console.log(value)}
+      onSearch={value => handleFilter(value)}
     />
 	)
 }
