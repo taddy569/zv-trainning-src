@@ -16,6 +16,20 @@ export const getDataStadium = () => ({
   type: CONSTANTS.STADIUMS_GET_ALL,
 })
 
+/////////////////////////////////////////////////////////////////////////
+export const fetchDataStadiums = () => ({
+  type: CONSTANTS.STADIUMS_FETCH_ALL,
+})
+
+export const fetchDataStadiumsSuccess = () => ({
+  type: CONSTANTS.STADIUMS_FETCH_SUCCESS,
+})
+
+export const fetchDataStadiumsFail = () => ({
+  type: CONSTANTS.STADIUMS_FETCH_FAIL,
+})
+//////////////////////////////////////////////////////////////////////////
+
 export const getStadiumsByFilterPriceData = (filterValue) => ({
   type: CONSTANTS.STADIUMS_FILTER_PRICE,
   value: filterValue,

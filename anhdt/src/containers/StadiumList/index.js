@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
 import StadiumList from '../../components/StadiumList'
-import { getDataStadium } from '../../reducers/homePageReducer'
+import { fetchDataStadiums } from '../../reducers/homePageReducer'
 
 const mapStateToProps = (state) => ({
 	stadiums: state.stadiums,
@@ -12,7 +12,7 @@ const mapStateToProps = (state) => ({
 // })
 
 const mapDispatchToProps = {
-	getData: () => getDataStadium()
+	getData: () => fetchDataStadiums()
 }
 
 export default connect(
